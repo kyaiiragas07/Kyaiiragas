@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website personal Kyaiiragas — mahasiswa Hukum Keluarga Islam dan Ketua DEMA FSHEI 2026/2027.">
+  <title>Kyaiiragas — Personal Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f7f7f5;color:#171717;line-height:1.6}
+    nav{position:fixed;top:0;width:100%;z-index:1000;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:rgba(247,247,245,.9);backdrop-filter:blur(12px);border-bottom:1px solid #e5e5e5}
+    .logo{font-size:22px;font-weight:800;letter-spacing:2px}.logo span{font-weight:400}
+    nav ul{list-style:none;display:flex;gap:28px}nav ul li a{text-decoration:none;color:#171717;font-size:14px}
+    .hero{min-height:100vh;padding:140px 7% 80px;display:flex;align-items:center;justify-content:space-between;gap:50px}
+    .hero-text{max-width:650px}.small-text{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#777;margin-bottom:15px}
+    .hero h1{font-size:clamp(50px,9vw,100px);line-height:.95;letter-spacing:-5px;margin-bottom:25px}.hero h1 span{color:#777;font-weight:300}
+    .hero-description{max-width:560px;color:#666;font-size:17px;margin-bottom:35px}
+    .buttons{display:flex;gap:15px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 24px;border-radius:50px;text-decoration:none;font-size:14px;transition:.3s}
+    .btn-dark{background:#171717;color:#fff}.btn-dark:hover{transform:translateY(-3px)}
+    .btn-outline{border:1px solid #171717;color:#171717}.btn-outline:hover{background:#171717;color:#fff}
+    .hero-photo{width:330px;height:430px;background:#dededb;border-radius:180px 180px 20px 20px;overflow:hidden;flex-shrink:0}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+    section{padding:100px 7%}.section-title{font-size:14px;text-transform:uppercase;letter-spacing:3px;color:#777;margin-bottom:15px}
+    .section-heading{font-size:clamp(35px,5vw,60px);line-height:1;letter-spacing:-2px;margin-bottom:50px}
+    .about{background:#171717;color:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about p{color:#bcbcbc;font-size:17px}
+    .info-list{border-top:1px solid #444}.info-item{padding:18px 0;border-bottom:1px solid #444;display:flex;justify-content:space-between;gap:20px}.info-item span:first-child{color:#888}
+    .experience-item{display:grid;grid-template-columns:180px 1fr;gap:40px;padding:30px 0;border-top:1px solid #ddd}.experience-item:last-child{border-bottom:1px solid #ddd}
+    .year{color:#888;font-size:14px}.experience-item h3{font-size:25px;margin-bottom:8px}.experience-item p{color:#666}
+    .projects{background:#ecece8}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .project-card{min-height:260px;background:#fff;padding:30px;border-radius:20px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s}
+    .project-card:hover{transform:translateY(-7px)}.project-number{font-size:13px;color:#888}.project-card h3{font-size:28px}.project-card p{color:#777;font-size:14px}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.gallery-item{height:230px;background:#ddd;border-radius:15px;overflow:hidden}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:.4s}.gallery-item:hover img{transform:scale(1.05)}
+    .contact{background:#171717;color:#fff;text-align:center}.contact .section-title{color:#888}.contact h2{font-size:clamp(40px,7vw,80px);line-height:1;margin-bottom:30px}
+    .contact p{color:#aaa;max-width:500px;margin:0 auto 30px}.social{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .social a{color:#fff;text-decoration:none;border:1px solid #444;padding:10px 20px;border-radius:50px;transition:.3s}.social a:hover{background:#fff;color:#171717}
+    footer{background:#171717;color:#666;text-align:center;padding:25px;border-top:1px solid #333;font-size:13px}
+    @media(max-width:768px){
+      nav{padding:16px 5%}nav ul{display:none}.hero{padding:130px 6% 70px;flex-direction:column-reverse;align-items:flex-start}
+      .hero-photo{width:230px;height:300px;align-self:center}.hero h1{letter-spacing:-3px}.hero-description{font-size:15px}
+      section{padding:75px 6%}.about-grid{grid-template-columns:1fr;gap:40px}.experience-item{grid-template-columns:1fr;gap:10px}
+      .project-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item{height:170px}
+    }
+    @media(max-width:480px){.hero-photo{width:200px;height:260px}.gallery-grid{grid-template-columns:1fr}.gallery-item{height:230px}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">KYAIIRAGAS<span>.</span></div>
+    <ul>
+      <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <div class="small-text">Personal Portfolio</div>
+      <h1>Hello,<br>I'm <span>Kyaiiragas.</span></h1>
+      <p class="hero-description">
+        Mahasiswa Hukum Keluarga Islam, organisator, dan pembelajar yang aktif dalam dunia organisasi,
+        kepemimpinan, kajian, serta pengembangan diri.
+      </p>
+      <div class="buttons">
+        <a href="#about" class="btn btn-dark">Explore My Journey</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="foto-kyaiiragas.jpeg" alt="Foto Kyaiiragas">
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-title">01 — About</div>
+    <h2 class="section-heading">A little bit<br>about me.</h2>
+    <div class="about-grid">
+      <div>
+        <p>
+          Saya adalah mahasiswa Hukum Keluarga Islam di INISNU Temanggung.
+          Selain menjalani perjalanan akademik, saya aktif dalam organisasi mahasiswa
+          dan terus mengembangkan kemampuan dalam kepemimpinan, diskusi, komunikasi,
+          serta kerja-kerja organisasi.
+        </p><br>
+        <p>
+          Saat ini saya dipercaya sebagai Ketua Dewan Eksekutif Mahasiswa
+          Fakultas Syariah, Hukum dan Ekonomi Islam (DEMA FSHEI) periode 2026/2027.
+          Saya juga aktif mengikuti organisasi PMII.
+        </p>
+      </div>
+      <div class="info-list">
+        <div class="info-item"><span>Nama</span><span>Kyaiiragas</span></div>
+        <div class="info-item"><span>Kampus</span><span>INISNU Temanggung</span></div>
+        <div class="info-item"><span>Jurusan</span><span>Hukum Keluarga Islam</span></div>
+        <div class="info-item"><span>Semester</span><span>5</span></div>
+        <div class="info-item"><span>Role</span><span>Ketua DEMA FSHEI 2026/2027</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-title">02 — Experience</div>
+    <h2 class="section-heading">My journey.</h2>
+
+    <div class="experience-item">
+      <div class="year">2026 — 2027</div>
+      <div>
+        <h3>Ketua DEMA FSHEI</h3>
+        <p>Memimpin Dewan Eksekutif Mahasiswa Fakultas Syariah, Hukum dan Ekonomi Islam dalam menjalankan program, advokasi mahasiswa, kajian, dan pengembangan organisasi.</p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="year">2025 — Now</div>
+      <div>
+        <h3>Hukum Keluarga Islam</h3>
+        <p>Menempuh pendidikan di INISNU Temanggung dengan fokus pada keilmuan Hukum Keluarga Islam serta pengembangan wawasan akademik.</p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="year">Ongoing</div>
+      <div>
+        <h3>PMII</h3>
+        <p>Aktif mengikuti kegiatan organisasi PMII sebagai ruang belajar, berdiskusi, berproses, dan mengembangkan kemampuan berorganisasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-title">03 — Projects</div>
+    <h2 class="section-heading">Things I've<br>worked on.</h2>
+    <div class="project-grid">
+      <div class="project-card"><div class="project-number">PROJECT 01</div><div><h3>DEMA FSHEI</h3><p>Kepemimpinan, program kerja, advokasi mahasiswa, dan pengembangan organisasi.</p></div></div>
+      <div class="project-card"><div class="project-number">PROJECT 02</div><div><h3>Academic</h3><p>Kajian, diskusi, penulisan, dan pengembangan wawasan di bidang hukum keluarga dan isu sosial.</p></div></div>
+      <div class="project-card"><div class="project-number">PROJECT 03</div><div><h3>Organization</h3><p>Pengalaman dalam kegiatan mahasiswa, kepanitiaan, komunikasi, dan kerja kolaboratif.</p></div></div>
+      <div class="project-card"><div class="project-number">PROJECT 04</div><div><h3>Creative</h3><p>Eksplorasi konten digital, fotografi, video, dan personal branding.</p></div></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-title">04 — Gallery</div>
+    <h2 class="section-heading">Moments.</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="foto-kyaiiragas.jpeg" alt="Kyaiiragas saat kegiatan"></div>
+      <div class="gallery-item"><img src="foto-kyaiiragas.jpeg" alt="Kyaiiragas"></div>
+      <div class="gallery-item"><img src="foto-kyaiiragas.jpeg" alt="Kegiatan Kyaiiragas"></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-title">05 — Contact</div>
+    <h2>Let's connect.</h2>
+    <p>Ingin berkenalan, berdiskusi, atau berkolaborasi? Hubungi saya melalui media sosial.</p>
+    <div class="social">
+      <a href="https://instagram.com/kyaiiragas" target="_blank">Instagram</a>
+      <a href="https://wa.me/62882003666493" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Kyaiiragas. All rights reserved.</footer>
+</body>
+</html>
